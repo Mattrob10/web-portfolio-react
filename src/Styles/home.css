@@ -1,0 +1,144 @@
+
+
+/*home section styling*/
+.home{
+  display: flex;
+  background:  linear-gradient(rgba(13, 11, 38, 0.601), rgba(13, 11, 38, 0.609)), url("https://cdn.discordapp.com/attachments/997271714792742922/1094965484664930374/Matthew_Robinson_paint_ce3d5a85-269d-46f3-a817-d357f0bca7bf.png");
+  background-size: cover;
+  background-image: no-repeat;
+  width:100%;
+  color: #fff;
+  max-height: 700px;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 200;
+}
+
+ .max-width{
+  margin: 15% 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: 2.5rem;
+  margin: 10px 40px;
+}
+
+.text-1 {
+  font-size: 2.5rem;
+  margin: 10px 40px; 
+}
+
+.text-1 span {
+  color:#64A8FF;
+  font-weight: 500;
+  font-size: 2.7rem;
+  font-style: italic;
+  
+}
+
+#resume {
+  position: static;
+  padding: 10px 20px;
+  margin: 35px 40px; 
+  border-radius: 7px;
+  border: 1px solid #64A8FF;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#resume-btn{
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+
+#resume:hover {
+  background: #04185a;
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#resume:hover::before {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+  left: 50%; 
+}
+
+
+#resume::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #04185a;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+#resume:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  color: rgb(3, 3, 44);
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .home{
+    max-height: 650px;
+  }
+}
+
+@media only screen 
+  and (max-device-width: 480px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+  .home{
+    max-height: 650px;
+  }  
+}

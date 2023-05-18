@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&family=Noto+Sans+Mono:wght@200;300;400&display=swap');
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Noto Sans Mono', monospace; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #05031ff7;
+  color: #f8f8f8;
+  padding: 0 8%;
+  scroll-behavior: smooth;
+}
+
+
+button.scrollTop {
+  position: fixed;
+  bottom: 150px;
+  right: 5px;
+  height: auto;
+  width: 25px;
+  color: #64A8FF;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  background-color: #0D0B26;
+  border-style: none;
+  border-radius: 5px;
+}
+
+button.scrollTop:hover {
+  color: rgba(5, 3, 31, 0.967);
+  background-color: #64A8FF;
+}
+
+.scrollText {
+  position: absolute;
+  bottom: -69px;
+  right: -56px;
+  transform: rotate(90deg) translateY(100%);
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+

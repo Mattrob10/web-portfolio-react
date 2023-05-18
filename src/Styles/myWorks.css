@@ -1,0 +1,138 @@
+
+
+.my-work-container {
+  padding: 60px 30px;
+  min-height: 700px;
+  margin: 20px 40px;
+  background:  linear-gradient(rgba(13, 11, 38, 0.505), rgba(13, 11, 38, 0.254)),url('../assests/hex-logo2.png');
+  background-repeat: no-repeat;
+  background-position: left top 60%;
+  background-size: 48%;
+}
+
+.my-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #030e32e2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  height: 500px;
+  width: calc(33.33% - 10px);
+  margin-block: 30px;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.5s ease;
+}
+
+.card:hover{
+  transform: scale(1.2);
+  background-color:#030e32f3 ;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.card img{
+  flex: 1;
+  object-fit: contain;
+  max-height: 100%;
+  width: 100%;
+}
+
+.card-btns{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ margin-top: 20px;
+}
+
+.github-link, .live-project{
+  padding: 5px 10px;
+border-radius: 7px;
+border: 1px solid #4073ff;
+font-size: 12px;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 2px;
+background: transparent;
+color: #b2b2b2;
+overflow: hidden;
+box-shadow: 0 0 0 0 transparent;
+-webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+}
+
+.github-link a, .live-project a{
+  text-decoration: none;
+  color: #b2b2b2;
+}
+
+.github-link:hover, .live-project:hover{
+  background: #0c2364;
+box-shadow: 0 0 30px 5px#18398d;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+}
+
+.github-link:hover::before, .live-project:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+  }
+
+.github-link::before, .live-project::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #0c2364;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.github-link:active, .live-project:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+@media (max-width: 1023px) {
+  .my-work{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    height: 100%;
+    width: 70%;
+  }
+}

@@ -1,0 +1,91 @@
+.skills-border {
+  width: 70%;
+  border-top: 1px solid #646CFF; 
+  margin: 50px auto;  
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 300;
+  margin-top: 6.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 23px;
+
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  margin: 40px;
+  transition: transform .2sec ease-in-out;
+}
+
+.skill-link {
+  color: transparent;
+  text-decoration: none;
+}
+
+.skill-item:hover {
+  transform: scale(1.1); 
+}
+
+.skill-item p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#html5 {
+  color: #E44D26;
+}
+
+#css3 {
+  color: #1572B6;
+}
+
+#json {
+  color: #606060;
+}
+
+#javaScript {
+  color: #F7DF1E;
+}
+#react {
+  color: #61DAFB;
+}
+
+#vite {
+  color: #646CFF;
+}
+
+#express {
+  color: #fffdfd;
+}
+
+#git {
+  color: #F05032;
+}
+
+#nodemon {
+  color: #76D04B;
+}
+
+#mongo {
+  color: #589636;
+}
+
+#postman {
+  color: #ef5b25;
+}
+
+#jquery {
+  color:#B24926;
+}

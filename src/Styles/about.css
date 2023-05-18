@@ -1,0 +1,77 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 60px;
+  background: linear-gradient(rgba(13, 11, 38, 0.505), rgba(13, 11, 38, 0.254)),url("../assests/cover.png");
+  background-repeat: no-repeat;
+  background-position: right -40% top 40%;
+  background-size: 65%;
+}
+
+.title {
+  text-align: center;
+  margin-block: 4rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.about-text {
+  text-align: left;
+  margin: 0px 10%;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #f8f8f8;
+  background-color: rgba(0, 0, 0, 0.052);
+  line-height: 2.5rem;
+}
+
+.about-text a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #64A8FF;
+}
+/* iPad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .title {
+    font-size: 2rem;
+  }
+  p{
+    font-size: 28px;
+  }
+  .about-text {
+    max-width: 600px;
+    font-size: .7rem;
+  }
+ 
+  .about-text p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen 
+  and (max-device-width: 480px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .about-text {
+      max-width: 600px;
+      font-size: .7rem;
+    }
+   
+    .about-text p {
+      font-size: 0.7rem;
+    } 
+  }

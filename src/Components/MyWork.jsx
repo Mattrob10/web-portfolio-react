@@ -2,8 +2,9 @@ import React from 'react';
 import '../Styles/myWorks.css';
 import cma from '../assests/cma.png'
 import bloggin from '../assests/bloggin.png'
-import meme from '../assests/meme.png'
-import css from '../assests/css.png'
+import chatGPT from '../assests/chatGPT.png'
+
+
 const MyWork = () => {
   return (
     <div className="my-work-container">
@@ -36,28 +37,15 @@ const MyWork = () => {
         </div>
         </div>
         <div className="card card1">
-          <h2>Meme Generator</h2>
-          <p>Generate a meme using a random selection of the top 100 images fetched from an API</p>
-          <img src={meme} alt=''/>
+          <h2>MattGPT</h2>
+          <p>ChatGPT Clone using Openai</p>
+          <img src={chatGPT} alt=''/>
           <div className="card-btns">
           <button className='github-link'>
-            <a href='https://github.com/Mattrob10/MEME-REACT' target='blank' id='card-btn'>GitHub</a>
+            <a href='https://github.com/Mattrob10/MatthewGPT' target='blank' id='card-btn'>GitHub</a>
           </button>
           <button className='live-project'>
-            <a href='https://shimmering-croissant-3c9077.netlify.app/' target='blank' id='card-btn'>DEMO</a>
-          </button>
-        </div>
-        </div>
-        <div className="card card1">
-          <h2>CSS Gradient Code Generator</h2>
-          <p>Allow user to specify colors, angles, and other parameters, to create visually appealing gradient backgrounds or text effects for their website design. </p>
-          <img src={css} alt=''/>
-          <div className="card-btns">
-          <button className='github-link'>
-            <a href='https://github.com/Mattrob10/assignment/tree/main/exercises/LVL%203/random-color-component' target='blank' id='card-btn'>GitHub</a>
-          </button>
-          <button className='live-project'>
-            <a href='https://snazzy-cassata-35a03d.netlify.app/' target='blank' id='card-btn'>DEMO</a>
+            <a href='https://matthewgpt.onrender.com/' target='blank' id='card-btn'>DEMO</a>
           </button>
         </div>
         </div>

@@ -20,6 +20,7 @@ header {
 	height: 80px;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+	z-index: 999;
 }
 #hex-logo {
 	margin-left: 50px;
@@ -32,18 +33,27 @@ header {
 	font-size: 9px;
 	margin-bottom: 2px;
  }
+  
 .play-toggle-btn {
-	font-size: 1.5rem;
-	background-color: #020E1E;
-	color: #4073ff;
-	height: 30px;
+	font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #f8f8f8;
 	border-style: none;
 	cursor: pointer;
+	padding: 5px 10px;
 }
 
 .play-toggle-btn:hover {
-	font-size: 1.8rem;
 	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 30px 5px#18398d;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
 }
 nav a {
 	margin: 0 1.4rem;

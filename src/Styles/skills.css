@@ -20,6 +20,17 @@
   font-size: 23px;
 
 }
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .skill-item {
   display: flex;
@@ -27,6 +38,21 @@
    align-items: center;
   margin: 40px;
   transition: transform .2sec ease-in-out;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+.skill-item:nth-child(even) {
+  animation-name: float;
+  animation-delay: 0s; /* Start the animation immediately */
+}
+
+.skill-item:nth-child(odd) {
+  animation-name: float;
+  animation-delay: 1s; /* Delay the animation by 1 second */
 }
 
 .skill-link {

@@ -3,7 +3,7 @@ import { RiCloseLine } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TbMusicOff, TbMusic } from "react-icons/tb";
 import ReactPlayer from "react-player";
-
+import resume from "../assests/Resume.pdf";
 import "../Styles/navbar.css";
 import logo from '../assests/hex-logo2.png'
 
@@ -29,6 +29,14 @@ function Navbar() {
   const handlePlayToggle = () => {
     setIsPlaying(!isPlaying);
   }
+
+  const handleClick = () => {
+    const link = document.createElement('a');
+    link.href = resume;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.click();
+  };
 
   return (
     <header>
@@ -70,8 +78,8 @@ function Navbar() {
           height="0"
         />
       )}
-       <button id="nav-resume">
-            <a href="https://www.linkedin.com/in/matthewrobinsondev/overlay/1635521927089/single-media-viewer/?profileId=ACoAADzYqEcBcrLGhsFRXDQizVtDB1iFlEg2Vbw" target="_blank" rel="noopener noreferrer" id="resume-btn">Resume</a>
+       <button id="nav-resume"onClick={handleClick}>
+            Resume
             </button>
     </header>
   );
